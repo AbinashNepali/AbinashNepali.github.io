@@ -34,19 +34,34 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
-
 /* =============================================================================
-   Links
+   Menu
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
-a:focus { outline: thin dotted; }
 
-/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
-a:hover, a:active { outline: 0; }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #fe57a1;
+}
 
 /* =============================================================================
    Typography
@@ -87,7 +102,6 @@ sub { bottom: -0.25em; }
    Lists
    ========================================================================== */
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
 dd { margin: 0 0 0 40px; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
@@ -226,17 +240,6 @@ td{
 	float: right;
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==|== media queries ======================================================
